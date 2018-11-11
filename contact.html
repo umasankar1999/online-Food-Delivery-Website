@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+      function initMap() {
+        var uluru = {lat: 21.1256815, lng: 81.7623699};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo-_n2cXblmt4zWspaOXTeUtvwx6DzcXY&callback=initMap">
+    </script>
+
+	<title>Hungry</title>
+
+       
+</head>
+<body >
+
+   <section>
+   	
+   		
+   			
+   		
+      <div id="main">
+   		
+        <a href="#" id="main_name">Hungry</a>
+      
+   		</div>
+      <ul>
+   		<nav>
+      		
+      <li>
+   			<a href="website.html" id="uma">Home</a>
+   		</li>
+   		<li >
+   			<a href="shop.html" id="uma">Shop</a>
+   		</li>
+   		<li >
+   			<a href="about.html" id="uma">About</a>
+   		</li>
+      
+
+         <!--<li >
+   			<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" id="uma">Sign In</a>
+         </li>-->
+         <li >
+        <a href="faq.html"  id="uma">FAQ</a>
+      </li>
+         <li>
+        <a href="#" id="nav_faq">Contact Us</a>
+      </li>
+      
+ 
+      <li >
+        <a href="#" id="uma" onclick="openNav()">Cart <i class="fa fa-shopping-bag"></i></a>
+      </li>
+         </nav>
+   	</ul>
+   	</section>
+   	<div id="main_faq">
+   		<h2 id="faq">CONTACT US</h2>
+         <p id="address"><br>500 Terry Francois St.</br>
+<br>San Francisco, CA 94158</br>
+
+<br>info@mysite.com</br>
+
+<br>Tel: 123-456-7890 </br></p>
+<div class="container">
+  <form action="#">
+    <div id="value3">
+    <input type="text" id="name" name="name" placeholder="Name*">
+
+    
+    <input type="text" id="email" name="email" placeholder="Email*">
+
+    
+    <input type="text" id="subject" name="subject" placeholder="Subject*">
+
+
+</div>
+    
+    <textarea id="message" name="message" placeholder="Message*" ></textarea>
+
+    <input type="submit" value="Send" id="send">
+  </form>
+</div>
+      <a href="#" id="social"><i class="fa fa-facebook-official"></i></a>
+      <a href="#" id="social"><i class="fa fa-instagram"></i></a>
+      <a href="#" id="social"><i class="fa fa-twitter"></i></a>
+      <div id="map"></div>
+   	</div>
+    
+    <div id="mySidenav" class="sidenav">
+      <div id="cart">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h5  >Cart</h5>
+  </div>
+  <div id="cart_word2">
+  <h5 id="cart_word">Cart is empty</h5>
+  </div>
+</div>
+</body>
+</html>
